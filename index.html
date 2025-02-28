@@ -39,9 +39,43 @@
                 }
             }
         }
-        document.addEventListener('DOMContentLoaded', () => {})
+        document.addEventListener('DOMContentLoaded', () => {
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                },
+            });
+        })
     </script>
     <title>SR SAID 𝕊𝕣 𝕊𝔸𝕀𝔻📈📈</title>
+    <style>
+        /* Nueva regla para que las imágenes no se corten */
+        .swiper-slide img {
+            width: 100%;  /* Ajusta el ancho al contenedor */
+            height: 100%; /* Ajusta la altura al contenedor */
+            object-fit: contain; /* Mantiene la proporción de la imagen sin recortarla */
+            border-radius: 8px; /* Opcional: redondea las esquinas de las imágenes */
+        }
+    </style>
 </head>
 
 <body class="bg-zinc-900">
@@ -57,7 +91,6 @@
             class="navbar bg-gradient-to-r from-blue-500 to-blue-900 md:rounded-lg md:min-h-2 min-h-0 animate__animated animate__fadeInDown"
             data-wow-delay="0.2s">
             <div class="flex-1 justify-center">
-                <!-- Aquí reemplazamos la URL del logo -->
                 <img src="https://media.istockphoto.com/id/1409980587/photo/3d-render-of-light-bulb-isolated-backgroundwith-clipping-path.jpg?s=1024x1024&w=is&k=20&c=IOdnXB6MtHC5N2lhNbhZdwoRIbPWjvAxSf4JY3R5zOI=" 
                     class="md:w-24 w-16 h-auto" loading="lazy" width="102" height="24" alt="NuevoLogo">
             </div>
@@ -72,8 +105,6 @@
 
             <div class="flex justify-center md:my-6 my-2 p-4 md:p-0 wow animate__animated animate__fadeIn"
                 data-wow-delay="0.1s">
-
-                <!-- Reemplazamos el enlace del video -->
                 <script src="https://fast.wistia.com/player.js" async></script>
                 <script src="https://fast.wistia.com/embed/kcm7fm7k5x.js" async type="module"></script>
                 <style>
@@ -125,24 +156,39 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                     class="w-full h-[640px] object-cover rounded-md wow animate__animated animate__fadeIn"
+                                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczZ4a3RyczR0czF6ZmduaWNqdWl4cHdsdGh1bGVzMzBhajQ4NXJmYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/taS2mFXlgo7cjC5o2J/giphy.gif"
+                                     class="w-full h-full object-cover rounded-md wow animate__animated animate__fadeIn"
                                      data-wow-delay="0.2s">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://images.pexels.com/photos/16902140/pexels-photo-16902140/free-photo-of-tecnologia-numeros-negocio-dinero.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                     class="w-full h-[640px] object-cover rounded-md wow animate__animated animate__fadeIn"
+                                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW9qeGZ5OHlnMnphN2d3NXJ4bGdrZ2FwOWE0YWV2czF3cHpwd2VsYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vaxteAfHVgUXc4PPvm/giphy.gif"
+                                     class="w-full h-full object-cover rounded-md wow animate__animated animate__fadeIn"
                                      data-wow-delay="0.3s">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://images.pexels.com/photos/2068664/pexels-photo-2068664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                     class="w-full h-[640px] object-cover rounded-md wow animate__animated animate__fadeIn"
+                                <img src="https://i.postimg.cc/Dw9JZ580/Imagen-de-Whats-App-2025-02-27-a-las-18-56-08-1ced2ec8.jpg"
+                                     class="w-full h-full object-cover rounded-md wow animate__animated animate__fadeIn"
                                      data-wow-delay="0.4s">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://images.pexels.com/photos/1272541/pexels-photo-1272541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                     class="w-full h-[640px] object-cover rounded-md wow animate__animated animate__fadeIn"
+                                <img src="https://i.postimg.cc/501X505M/Imagen-de-Whats-App-2025-02-27-a-las-18-56-08-31845870.jpg"
+                                     class="w-full h-full object-cover rounded-md wow animate__animated animate__fadeIn"
                                      data-wow-delay="0.5s">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.postimg.cc/6QC7GRv0/Imagen-de-Whats-App-2025-02-27-a-las-18-56-09-28a44096.jpg"
+                                     class="w-full h-full object-cover rounded-md wow animate__animated animate__fadeIn"
+                                     data-wow-delay="0.6s">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.postimg.cc/LXTnxpvg/Imagen-de-Whats-App-2025-02-27-a-las-18-56-09-446cfdd2.jpg"
+                                     class="w-full h-full object-cover rounded-md wow animate__animated animate__fadeIn"
+                                     data-wow-delay="0.7s">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.postimg.cc/BbntyVwY/Imagen-de-Whats-App-2025-02-27-a-las-18-56-09-b1dc2c51.jpg"
+                                     class="w-full h-full object-cover rounded-md wow animate__animated animate__fadeIn"
+                                     data-wow-delay="0.8s">
                             </div>
                         </div>
                         <!-- If we need pagination -->
@@ -151,27 +197,11 @@
                         <!-- If we need navigation buttons -->
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script>
-        const swiper = new Swiper('.swiper', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
 
 </body>
 
